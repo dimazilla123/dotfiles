@@ -1,0 +1,33 @@
+music_directory "~/music"
+pid_file "~/.mpd/pid"
+db_file "~/.mpd/database"
+state_file "~/.mpd/state"
+playlist_directory "~/.mpd/playlists/"
+sticker_file "~/.mpd/sticker.sql"
+log_file "~/.mpd/log"
+
+bind_to_address "127.0.0.1"
+port "6600"
+
+audio_output {
+type "pulse"
+name "pulse audio"
+}
+audio_output {
+    type                    "fifo"
+    name                    "my_fifo"
+    path                    "/tmp/mpd.fifo"
+    format                  "44100:16:2"
+}
+audio_output {
+       type                    "alsa"
+       name                    "alsa"
+       options                 "dev=dmixer"
+       device                  "plug:dmix"
+}
+
+
+auto_update "yes"
+
+filesystem_charset "UTF-8"
+id3v1_encoding "UTF-8"

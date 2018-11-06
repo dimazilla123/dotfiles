@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"YcmdCompletion",
+		"YouCompleteMe"
+	],
+	"theme": "Boxy Monokai.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

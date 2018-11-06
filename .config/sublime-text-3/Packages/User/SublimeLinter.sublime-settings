@@ -1,0 +1,11 @@
+// SublimeLinter Settings - User
+{
+    "linters": {
+        "clang++": {
+            "I": [
+                ".",
+                "src"
+            ]
+        }
+    }
+}

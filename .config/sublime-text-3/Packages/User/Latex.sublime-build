@@ -1,0 +1,4 @@
+{
+    "shell_cmd": "pdflatex ${file}",
+    "selector": "source.latex"
+}

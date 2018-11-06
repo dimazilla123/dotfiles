@@ -37,7 +37,7 @@ function ExecuteFile()
     if tail == "py"
         let command =  "python3 %"
     elseif tail == "tex"
-        let command =  "evince " . name . ".pdf"
+        let command =  "zathura " . name . ".pdf"
     else
         let command =  "./" . name
     endif

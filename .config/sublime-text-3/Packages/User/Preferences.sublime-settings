@@ -3,9 +3,13 @@
 	"font_size": 11,
 	"ignored_packages":
 	[
+		"Boxy Theme",
+		"EasyClangComplete",
+		"Material Theme",
+		"Theme - Afterglow",
 		"YcmdCompletion",
 		"YouCompleteMe"
 	],
-	"theme": "Boxy Monokai.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true
 }

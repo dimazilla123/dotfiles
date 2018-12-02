@@ -1,4 +1,4 @@
 {
-	"shell_cmd": "cat input | python3 ${file} | tee output",
+	"shell_cmd": "cat input | python3 ${file}",
 	"selector": "source.python"
 }

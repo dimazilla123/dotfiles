@@ -1,4 +1,11 @@
 {
     "shell_cmd": "pdflatex ${file}",
-    "selector": "source.latex"
+    "selector": "source.tex",
+    "variants":
+    [
+        {
+            "name": "Preview",
+            "shell_cmd": "zathura ${file_base_name}.pdf"
+        }
+    ]
 }

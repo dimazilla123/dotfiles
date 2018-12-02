@@ -1,15 +1,19 @@
 {
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"dictionary": "Packages/User/Russian-English Bilingual.dic",
 	"font_size": 11,
+	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Boxy Theme",
-		"EasyClangComplete",
+		"Anaconda",
 		"Material Theme",
 		"Theme - Afterglow",
+		"Vintageous",
 		"YcmdCompletion",
 		"YouCompleteMe"
 	],
-	"theme": "Adaptive.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"remember_open_files": false,
+	"theme": "Boxy Monokai.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"vintageous_use_ctrl_keys": true
 }

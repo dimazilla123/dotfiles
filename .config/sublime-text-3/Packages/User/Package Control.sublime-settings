@@ -5,16 +5,23 @@
 	],
 	"installed_packages":
 	[
+		"Anaconda",
 		"ayu",
 		"Boxy Theme",
+		"Boxy Theme Addon - Mono File Icons",
 		"EasyClangComplete",
+		"Jedi - Python autocompletion",
 		"Material Theme",
+		"Origami",
 		"Package Control",
 		"SublimeLinter",
 		"SublimeLinter-clang",
 		"SublimeLinter-pylint",
 		"SublimeREPL",
 		"Theme - Afterglow",
+		"Vintage-Origami",
+		"Vintageous",
+		"VintageousOrigami",
 		"YcmdCompletion",
 		"YouCompleteMe"
 	]

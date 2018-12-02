@@ -2,4 +2,9 @@
     { "keys": ["ctrl+alt+b"],
       "command": "run_existing_window_command",
       "args": { "id": "repl_python", "file": "config/Python/Main.sublime-menu" } },
+      // { "keys": ["ctrl+w"], "command": }
+    { 
+        "keys": ["ctrl+shift+o"],
+        "command": "prompt_open_folder"
+    }
 ]

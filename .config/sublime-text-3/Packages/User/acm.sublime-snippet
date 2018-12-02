@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+#include <iostream>
+#include <vector>
+#include <cstdio>
+#include <algorithm>
+
+using namespace std;
+
+#ifndef LOCAL
+#define cerr if (0) cerr
+#define fprintf if (0) fprintf
+#endif
+
+int main(int argc, char const *argv[])
+{
+    
+    return 0;
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>acm</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.c++</scope>
+</snippet>

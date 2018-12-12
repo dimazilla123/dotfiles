@@ -7,6 +7,8 @@
 
 using namespace std;
 
+#define forn(i, s, n) for (int i = s; i < n; ++i)
+
 #ifndef LOCAL
 #define cerr if (0) cerr
 #define fprintf if (0) fprintf

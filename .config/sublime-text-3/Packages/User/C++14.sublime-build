@@ -12,7 +12,7 @@
   [ 
     {
       "name": "Run",
-      "shell_cmd": "cat input | ./${file_base_name} | tee output"
+      "shell_cmd": "cat input.txt | ./${file_base_name} | tee output"
     }
   ]    
 }

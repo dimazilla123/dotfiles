@@ -1,6 +1,6 @@
 {
-    "shell_cmd": "pdflatex ${file}",
-    "selector": "source.tex",
+    "shell_cmd": "pdflatex -shell-ecapse ${file}",
+    "selector": "text.tex.latex",
     "variants":
     [
         {

@@ -487,11 +487,14 @@ main () {
     export_colors
     reload_xrdb
     reload_env >/dev/null 2>&1
-
+    cp ~/.cache/wal/colors.xresources ~/.xresources
+    perl ~/.local/bin/gen_term_conf
     # Set the locale back to the original value.
     export LC_ALL="$sys_locale"
 
+    # ~/scripts/polybar_run.sh >/dev/null 2>&1
     # Execute custom script.
+    bash -c ~/scripts/polybar_run.sh
     [[ "${external_script[0]}" ]] && bash -c "${external_script[@]}"
 
     cleanup_pid

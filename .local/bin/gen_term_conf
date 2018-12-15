@@ -1,0 +1,28 @@
+#!/bin/perl
+
+open $inp, "/home/dima/.xresources" or die "Cannot open";
+%color_map = ();
+while ($_ = <$inp>)
+{
+	#print "$_\n";
+	/.color(\d+): (#.+)/;
+	$color_map{"color$1"} = lc $2;
+}
+close $inp;
+delete $color_map{color};
+foreach $key (keys %color_map)
+{
+	print "$key = $color_map{$key}\n";
+}
+open $outp, ">", "/home/dima/.config/termite/config" or die "Cannot open config";
+#open $outp, ">", "tmp" or die "Cannot open config";
+print $outp "[colors]\n";
+foreach $cn (keys %color_map)
+{
+	print $outp "$cn = $color_map{$cn}\n";
+}
+print $outp "foreground = $color_map{color15}\n";
+print $outp "foreground_bold = $color_map{color15}\n";
+print $outp "cursor = $color_map{color15}\n";
+print $outp "background = $color_map{color0}\n";
+close $outp;

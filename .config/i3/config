@@ -9,12 +9,13 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-exec --no-startup-id "feh --bg-scale ~/Downloads/hydra.png"
+#exec --no-startup-id "feh --bg-scale ~/Downloads/hydra.png"
+exec --no-startup-id "feh --randomize --bg-scale ~/Wallpapers/*"
 exec --no-startup-id "~/scripts/polybar_run.sh"
 exec --no-startup-id "~/scripts/keyboard_setup.sh"
 
-#set $term termite
-set $term st
+set $term termite
+#set $term st
 set $mod mod4
 #set $mod mod1
 #Mod4
@@ -196,10 +197,28 @@ bar {
   #  urgent_workspace #2f343a #900000 #ffffff
   #}
 }
+# Set colors from Xresources
+# # Change 'color7' and 'color2' to whatever colors you want i3 to use
+# # from the generated scheme.
+# # NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
+# # it fails to get colors from Xresources for some reason.
+ set_from_resource $fg i3wm.color15 #f0f0f0
+ set_from_resource $bg i3wm.color2 #f0f0f0
+ set_from_resource $tc i32m.color3
+ 
+#
+# # class                 border  backgr. text indicator child_border
+ client.focused          $bg     $tc     $fg  $bg       $bg
+ client.focused_inactive $bg     $bg     $fg  $bg       $bg
+ client.unfocused        $bg     $bg     $fg  $bg       $bg
+ client.urgent           $bg     $bg     $fg  $bg       $bg
+ client.placeholder      $bg     $bg     $fg  $bg       $bg
+#
+ client.background       $bg
 for_window [class=".*"] border pixel 1
 hide_edge_borders both
 
-client.focused #0088CC #0088CC #ffffff #dddddd
-client.focused_inactive #333333 #333333 #888888 #292d2e
-client.unfocused #333333 #333333 #888888 #292d2e
-client.urgent #2f343a #900000 #ffffff #900000
+#client.focused #0088CC #0088CC #ffffff #dddddd
+#client.focused_inactive #333333 #333333 #888888 #292d2e
+#client.unfocused #333333 #333333 #888888 #292d2e
+#client.urgent #2f343a #900000 #ffffff #900000

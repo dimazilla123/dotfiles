@@ -5,8 +5,10 @@ bottom = false
 ;width = 100%
 ;height = 20
 
-background = #1f1f1f
-foreground = #eee
+#background = #1f1f1f
+#foreground = #eee
+foreground = ${xrdb:color15}
+background = ${xrdb:color2}
 
 line-color = ${bar/bottom.background}
 line-size = 1
@@ -84,7 +86,7 @@ font-3 = Siji:pixelsize=11;1
 font-4 = FontAwesome:size=11;0
 
 modules-left = i3 
-modules-right =   filesystem volume backlight   battery date wireless-network
+modules-right =   backlight   battery date wireless-network
 
 [module/backlight]
 type = internal/backlight

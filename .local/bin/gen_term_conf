@@ -1,6 +1,6 @@
 #!/bin/perl
 
-open $inp, "/home/dima/.xresources" or die "Cannot open";
+open $inp, "/home/dima/.cache/wal/colors.xresources" or die "Cannot open";
 %color_map = ();
 while ($_ = <$inp>)
 {

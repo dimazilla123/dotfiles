@@ -10,12 +10,13 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 #exec --no-startup-id "feh --bg-scale ~/Downloads/hydra.png"
-exec --no-startup-id "feh --randomize --bg-scale ~/Wallpapers/*"
+#exec --no-startup-id "feh --randomize --bg-scale ~/Wallpapers/*"
 exec --no-startup-id "~/scripts/polybar_run.sh"
 exec --no-startup-id "~/scripts/keyboard_setup.sh"
 
-set $term termite
+#set $term termite
 #set $term st
+set $term urxvt
 set $mod mod4
 #set $mod mod1
 #Mod4
@@ -97,6 +98,8 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
+
+bindsym $mod+Escape exec 'i3lock'
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle

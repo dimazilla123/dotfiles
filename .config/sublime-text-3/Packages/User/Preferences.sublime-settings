@@ -1,7 +1,8 @@
 {
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"dictionary": "Packages/User/Russian-English Bilingual.dic",
-	"font_size": 11,
+	"font_face": "Inconsolata",
+	"font_size": 12,
 	"hot_exit": false,
 	"ignored_packages":
 	[

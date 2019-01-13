@@ -67,6 +67,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+bindkey -v
 
 # User configuration
 

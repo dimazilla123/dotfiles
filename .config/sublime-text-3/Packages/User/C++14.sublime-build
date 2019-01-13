@@ -4,7 +4,13 @@
    * terminator by changing "gnome-terminal -x" in "cmd" in "variants" field to
    * "xterm -e" or "terminator -x".
   */
-  "cmd": ["g++", "-std=c++17", "$file", "-g", "-DLOCAL", "-o", "${file_path}/${file_base_name}"],
+  //"cmd": ["g++", "-std=c++17", "$file", "-Wall", "-g", "-DLOCAL", "-o", "${file_path}/${file_base_name}"],
+  "cmd": [
+    "g++", "-g", "-Wall", "-Wextra", "-Werror", "-D_GLIBCXX_DEBUG",  "-D_GLIBCXX_DEBUG_PEDANTIC",
+    "-Wconversion", "-lm", "-fsanitize=address", "-fsanitize=bounds", "-Wshadow", 
+    //"-D_FORTIFY_SOURCE=2",
+    "-fsanitize=undefined", "-fno-sanitize-recover", "-Wformat=2", "-std=c++17", "-fno-stack-limit",
+    "$file", "-o", "${file_path}/${file_base_name}"],
   "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
   "working_dir": "${file_path}",
   "selector": "source.c, source.c++, source.cxx, source.cpp",

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-cin >> ${1:var};${2:}
+std::cin >> ${1:var};${2:}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>cin</tabTrigger>

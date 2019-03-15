@@ -337,7 +337,7 @@ type = internal/volume
 :headphone-id = 9
 
 format-volume = <ramp-volume> <label-volume>
-label-muted =   muted
+label-muted = 🔇  muted
 label-muted-foreground = #66
 
 ramp-volume-0 = 
